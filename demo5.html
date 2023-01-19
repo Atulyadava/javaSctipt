@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cal(){
+            a = parseInt(document.f2.kannda.value);
+                b = parseInt(document.f2.hindi.value);
+                c = parseInt(document.f2.english.value);
+                d = parseInt(document.f2.mathematic.value);
+                e = parseInt(document.f2.science.value);
+                 r = (a + b +c+d+e)/5; 
+
+            if(r>90)
+            {
+             document.write("renk");
+            }
+            else if(r<=90 && r>75)
+            {
+               document.write("dictasion")
+            }
+            else if(r<=75 && r>60)
+            {
+               document.write("first")
+            }
+            else if(r<=60 &&r>50)
+            {
+                document.write("second")
+            }
+            else if(r<=50 &&r>35)
+            {
+                document.write("second")
+            }
+            else if(r<35)
+            {
+                document.write("fail")
+            }
+        }
+        
+
+    </script>
+</head>
+<body bgcolor="yellow">  
+    <div style="text-align: center;">
+        <h1> Hi CACULATOR Demo </h1>
+        <form name="f2">
+            kannda maeks : <input type="text" name="kannda"><br>
+            hindi marks : <input type="text" name="hindi"><br>
+            english marks :<input type="text" name="english"><br>
+            mathematic marks :<input type="text" name="mathematic"><br>
+            science marks:<input type="text" name="science"><br>
+            <input type="button" onclick="cal()" value="result">
+            
+        </form>
+    </div>
+
+</body>
+
+</html>
